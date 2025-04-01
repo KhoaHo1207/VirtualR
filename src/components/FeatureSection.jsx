@@ -1,8 +1,12 @@
+import { forwardRef } from "react";
 import { features } from "../constants";
 
-const FeatureSection = () => {
+const FeatureSection = forwardRef((props, ref) => {
   return (
-    <div className="relative mt-20 border-b border-neutral-800 min-h-[800px]">
+    <div
+      className="relative mt-20 border-b border-neutral-800 min-h-[800px]"
+      ref={ref}
+    >
       <div className="text-center">
         <span className="bg-neutral-900 text-orange-500 rounded-full h-6 text-sm font-medium px-2 py-1 uppercase">
           Feature
@@ -33,6 +37,6 @@ const FeatureSection = () => {
       </div>
     </div>
   );
-};
+});
 
 export default FeatureSection;

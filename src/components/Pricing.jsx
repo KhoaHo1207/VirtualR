@@ -1,9 +1,10 @@
 import { CheckCircle2 } from "lucide-react";
 import { pricingOptions } from "../constants";
+import { forwardRef } from "react";
 
-const Pricing = () => {
+const Pricing = forwardRef((props, ref) => {
   return (
-    <div className="mt-20">
+    <div className="mt-20" ref={ref}>
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide">
         Pricing
       </h2>
@@ -43,6 +44,6 @@ const Pricing = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Pricing;
