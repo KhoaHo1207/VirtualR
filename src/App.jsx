@@ -1,12 +1,15 @@
 import { useState } from "react";
 import viteLogo from "/vite.svg";
 import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className="max-w-7xl mx-auto pt-20 px-6"></div>
+      <div className="max-w-7xl mx-auto pt-20 px-6">
+        <HeroSection />
+      </div>
     </>
   );
 }
