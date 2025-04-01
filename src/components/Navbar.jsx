@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/NexusVR_Logo.png";
 import { navItems } from "../constants";
 import { Link } from "react-router-dom";
 
@@ -27,7 +27,7 @@ const Navbar = ({
         <div className="flex justify-between items-center">
           <a href="/" className="flex items-center flex-shrink-0">
             <img className="h-10 w-10 mr-2" src={logo} alt="Logo" />
-            <span className="text-xl tracking-tight">VirtualR</span>
+            <span className="text-xl tracking-tight">Nexus VR</span>
           </a>
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map(({ title, label }, index) =>
